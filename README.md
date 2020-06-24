@@ -52,7 +52,7 @@ There are a number of ways this method can be incorrect. serverAddress can be nu
         server.Start();
     }
     
-Now when we this method is handed to Coverage-Utility, we will experience an InvalidOperationException when server.Address or server.Port is negative. In order for our tests to begin passing, we have to make the following changes:
+Now when this method is handed to Coverage-Utility, we will experience an InvalidOperationException when server.Address or server.Port is negative. In order for our tests to begin passing, we have to make the following changes:
 
     [TestSuggestion(Parameter = "serverUri", Value = "NOT A VALID URI")]
     [TestSuggestion(Parameter = "port", Value = "-99")]
