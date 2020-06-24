@@ -30,12 +30,12 @@ Coverage utility is a tool that crawls any types handed to it and attempts to ca
 To enforce certain rules over time for your application, you can be more specific about specific use cases by using the TestSuggestion attribute. Marking a method with TestSuggestion informs CoverageUtility to run a test using your specific argument for a specific parameter. CoverageUtility will still run the good and bad default test on the method and will run suggestions afterword.
 
 Consider the following method
+
     public void MyTest(string serverAddress, int port)
     {
         var server = new Server();
         server.Address = serverAddress;
         server.Port = port;
-        
         server.Start();
     }
     
