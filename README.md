@@ -39,7 +39,7 @@ Consider the following method
         server.Start();
     }
     
-There are a number of ways this method can be incorrect. serverUri can be null, serverUri can be empty, serverUri can be an invalid URI and port might be negative. To enforce testing rules on the method, we can add our attributes.
+There are a number of ways this method can be incorrect. serverAddress can be null, serverAddress can be empty, and port might be negative. To enforce testing rules on the method, we can add our attributes.
     
     [TestSuggestion(Parameter = "serverUri", Value = "NOT A VALID URI")]
     [TestSuggestion(Parameter = "port", Value = "-99")]
