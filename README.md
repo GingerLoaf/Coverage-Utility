@@ -77,7 +77,7 @@ Now when this method is handed to Coverage-Utility, we will experience an Invali
         server.Start();
     }
     
-Coverage-Utility has made our code more robust! It is no longer possible for our code to read an error condition and we inform the caller of the exact reasons why their arguments may have not been valid.
+Coverage-Utility has made our code more robust! It is no longer possible for our code to reach an error condition and we inform the caller of the exact reasons why their arguments may have not been valid.
 
 # Supported Types
 Coverage-Utility is able to automatically instantiate instances of dependencies. If your method asks for a custom class, Coverage-Utility can create an instance of that object to pass into your method for testing. Here are the types that are supported:
