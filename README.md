@@ -97,7 +97,7 @@ Coverage-Utility is able to automatically instantiate instances of dependencies.
   </tr>
   <tr>
     <td>Interface</td>
-    <td>Yes</td>
+    <td>Yes (uses the MOQ library for now)</td>
   </tr>
   <tr>
     <td>Generic Type</td>
